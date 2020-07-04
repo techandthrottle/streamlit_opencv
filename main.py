@@ -34,8 +34,8 @@ if uploaded_img is not None:
         retval, data = cv2.threshold(new_img, thresh_value, 255, cv2.THRESH_BINARY)
 
     st.subheader('Original Image')
-    st.image(new_img, caption='Ouput Image')
+    st.image(new_img, caption='Input Image', use_column_width=True)
     
     cv2.imwrite('output.jpg',data)
     st.subheader('Output Image')
-    st.image('output.jpg', caption='Ouput Image')
+    st.image('output.jpg', caption='Ouput Image', use_column_width=True)
