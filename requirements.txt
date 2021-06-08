@@ -1,3 +1,4 @@
 streamlit
 opencv-python
+pkg-config
 libgtk2.0-dev
